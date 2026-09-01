@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BE Alvarez-Serna</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1a1a1a; background-color: #ffffff; line-height: 1.6; }
+    
+    /* Contenedor principal de dos columnas */
+    .container { display: flex; max-width: 1050px; margin: 0 auto; padding: 50px 20px; gap: 60px; }
+    
+    /* Barra lateral izquierda */
+    .sidebar { width: 230px; flex-shrink: 0; }
+    .profile-img { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; border: 1px solid #e0e0e0; }
+    .author-name { font-size: 1.4rem; font-weight: 700; color: #1a1a1a; line-height: 1.2; margin-bottom: 4px; }
+    .author-title { font-size: 0.9rem; color: #666; margin-bottom: 12px; }
+    
+    .cv-links { font-size: 0.88rem; margin-bottom: 20px; }
+    .cv-links a { color: #800000; text-decoration: none; font-weight: 600; margin-right: 10px; }
+    .cv-links a:hover { text-decoration: underline; }
+    
+    .divider { border: none; border-top: 1px solid #800000; margin: 20px 0; width: 100%; }
+    
+    /* Navegación */
+    .nav-links { list-style: none; margin-bottom: 20px; }
+    .nav-links li { margin-bottom: 12px; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 1rem; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #800000; font-weight: 700; }
+    
+    .scholar-link { font-size: 0.95rem; margin-bottom: 30px; }
+    .scholar-link a { color: #800000; text-decoration: none; font-weight: 600; }
+    .scholar-link a:hover { text-decoration: underline; }
+    
+    /* Frase motivacional */
+    .quote-box { font-size: 0.85rem; font-style: italic; color: #555; border-left: 2px solid #800000; padding-left: 12px; margin-top: 30px; line-height: 1.4; }
+    
+    /* Contenido principal derecho */
+    .main-content { flex-grow: 1; max-width: 720px; }
+    
+    .bio-section { margin-bottom: 40px; padding-bottom: 30px; border-bottom: 1px solid #eeeeee; }
+    .section-title { font-size: 1.5rem; color: #800000; margin-bottom: 15px; font-weight: 700; }
+    
+    /* Estilo de publicaciones / entradas */
+    .post { margin-bottom: 45px; }
+    .post-title { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
+    .post-date { font-size: 0.85rem; color: #888; margin-bottom: 15px; }
+    .post-img { width: 100%; max-height: 380px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; border: 1px solid #eaeaea; }
+    .post-text { color: #333; font-size: 0.98rem; }
+    .post-text a { color: #800000; text-decoration: none; font-weight: 600; }
+    .post-text a:hover { text-decoration: underline; }
+
+    /* Adaptación móvil */
+    @media (max-width: 768px) {
+      .container { flex-direction: column; gap: 30px; padding: 30px 15px; }
+      .sidebar { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- BARRA LATERAL IZQUIERDA -->
+    <aside class="sidebar">
+      <!-- Foto de perfil -->
+      <img src="foto.jpg" alt="Foto de Perfil" class="profile-img">
+      
+      <!-- Nombre y Título -->
+      <h1 class="author-name">Bryan Emmanuel Alvarez Serna</h1>
+      <p class="author-title">Ph.D. in Electrical Engineering – Full-Time Visiting Professor</p>
+      
+      <!-- Links de CV -->
+      <div class="cv-links">
+        <a href="cv-es.pdf" target="_blank">CV (Español)</a>
+        <a href="cv-en.pdf" target="_blank">CV (English)</a>
+      </div>
+      
+      <hr class="divider">
+      
+      <!-- Menú de Navegación -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+      
+      <hr class="divider">
+      
+      <!-- Link a Google Scholar -->
+      <div class="scholar-link">
+        <a href="https://scholar.google.com/citations?user=cvbIr90AAAAJ&hl=es" target="_blank">Google Scholar</a>
+      </div>
+      
+      <!-- Frase Motivacional -->
+      <div class="quote-box">
+        "Sometimes science is more art than science..."
+      </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      
+      <!-- Breve Reseña -->
+      <section class="bio-section">
+        <h2 class="section-title">About me</h2>
+        <p>I received my B.Sc. in Electrical and Electronic Engineering from the Faculty of Engineering in 2019, followed by an M.Sc. in Electrical Engineering (Instrumentation) from the Institute of 
+          Applied Sciences and Technology in 2021, graduating with honors. In 2026, I received my Ph.D. in Electrical Engineering (Instrumentation) from the Institute of Engineering, also with honors. 
+          All three degrees were awarded by the National Autonomous University of Mexico (UNAM). In 2024, I completed a research stay at INQUIMAE, University of Buenos Aires (UBA), Argentina. 
+          I have been involved in university teaching since [year]. My research interests include electrochemical and electrical sensors, electronic instrumentation, and semiconductor development, 
+          with a particular focus on technological solutions to challenges in energy, water, and healthcare. Since May 2026, I have been a Visiting Professor at Universidad Autónoma Metropolitana (UAM), 
+          Unidad Lerma, where I conduct research, teach undergraduate and graduate courses, supervise students, and contribute to technological development.</p>
+      </section>
+
+      <!-- SECCIÓN DE PUBLICACIONES / NOTICIAS -->
+      <section>
+        <h2 class="section-title">Welcome</h2>
+
+        <!-- Entrada 1 (con imagen y texto) -->
+        <article class="post">
+          <h3 class="post-title">Título de la Publicación o Proyecto</h3>
+          <p class="post-date">01 Feb 2026</p>
+          <img src="imagen1.jpg" alt="Imagen del proyecto" class="post-img">
+          <p class="post-text">
+            Descripción corta o resumen del proyecto o logro reciente. Puedes incluir un enlace para leer más o dirigir a una fuente externa como este <a href="#">enlace de interés</a>.
+          </p>
+        </article>
+
+        <!-- Entrada 2 (con imagen y texto) -->
+        <article class="post">
+          <h3 class="post-title">Segundo Proyecto o Noticia Destacada</h3>
+          <p class="post-date">15 Ene 2026</p>
+          <img src="imagen2.jpg" alt="Imagen de la publicación" class="post-img">
+          <p class="post-text">
+            Texto explicativo sobre la segunda entrada. Aquí puedes detallar metodologías, resultados obtenidos o colaboraciones realizadas.
+          </p>
+        </article>
+
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
