@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Sitio Personal</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1a1a1a; background-color: #ffffff; line-height: 1.6; }
+    .container { display: flex; max-width: 1050px; margin: 0 auto; padding: 50px 20px; gap: 60px; }
+    .sidebar { width: 230px; flex-shrink: 0; }
+    .profile-img { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; border: 1px solid #e0e0e0; }
+    .author-name { font-size: 1.4rem; font-weight: 700; color: #1a1a1a; line-height: 1.2; margin-bottom: 4px; }
+    .author-title { font-size: 0.9rem; color: #666; margin-bottom: 12px; }
+    .cv-links { font-size: 0.88rem; margin-bottom: 20px; }
+    .cv-links a { color: #800000; text-decoration: none; font-weight: 600; margin-right: 10px; }
+    .cv-links a:hover { text-decoration: underline; }
+    .divider { border: none; border-top: 1px solid #800000; margin: 20px 0; width: 100%; }
+    .nav-links { list-style: none; margin-bottom: 20px; }
+    .nav-links li { margin-bottom: 12px; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 1rem; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #800000; font-weight: 700; }
+    .scholar-link { font-size: 0.95rem; margin-bottom: 30px; }
+    .scholar-link a { color: #800000; text-decoration: none; font-weight: 600; }
+    .scholar-link a:hover { text-decoration: underline; }
+    .quote-box { font-size: 0.85rem; font-style: italic; color: #555; border-left: 2px solid #800000; padding-left: 12px; margin-top: 30px; line-height: 1.4; }
+    
+    .main-content { flex-grow: 1; max-width: 720px; }
+    .section-title { font-size: 1.5rem; color: #800000; margin-bottom: 20px; font-weight: 700; }
+    .project-item { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+    .project-item h3 { font-size: 1.2rem; margin-bottom: 5px; color: #1a1a1a; }
+    .project-item p { color: #444; font-size: 0.95rem; }
+    @media (max-width: 768px) { .container { flex-direction: column; gap: 30px; padding: 30px 15px; } .sidebar { width: 100%; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="foto.jpg" alt="Foto de Perfil" class="profile-img">
+      <h1 class="author-name">Tu Nombre</h1>
+      <p class="author-title">Investigador / Académico</p>
+      <div class="cv-links">
+        <a href="cv-es.pdf" target="_blank">CV (Español)</a>
+        <a href="cv-en.pdf" target="_blank">CV (English)</a>
+      </div>
+      <hr class="divider">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+      <hr class="divider">
+      <div class="scholar-link"><a href="https://scholar.google.com" target="_blank">Google Scholar</a></div>
+      <div class="quote-box">"La ciencia no es solo una disciplina de la razón, sino también de romance y pasión."</div>
+    </aside>
+
+    <main class="main-content">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="project-item">
+        <h3>Proyecto 1: Nombre del Proyecto</h3>
+        <p>Descripción detallada del proyecto de investigación o desarrollo actual, sus objetivos y fuentes de financiamiento.</p>
+      </div>
+
+      <div class="project-item">
+        <h3>Proyecto 2: Nombre del Proyecto</h3>
+        <p>Descripción del segundo proyecto, estado actual y colaboradores principales.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
