@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Sitio Personal</title>
+  <title>Projects - BEAS</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1a1a1a; background-color: #ffffff; line-height: 1.6; }
     .container { display: flex; max-width: 1050px; margin: 0 auto; padding: 50px 20px; gap: 60px; }
     .sidebar { width: 230px; flex-shrink: 0; }
-    .profile-img { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; border: 1px solid #e0e0e0; }
+    .profile-img { width: 85px; height: 110px; object-fit: contain; background-color: #ffffff; }
     .author-name { font-size: 1.4rem; font-weight: 700; color: #1a1a1a; line-height: 1.2; margin-bottom: 4px; }
     .author-title { font-size: 0.9rem; color: #666; margin-bottom: 12px; }
     .cv-links { font-size: 0.88rem; margin-bottom: 20px; }
@@ -24,6 +24,7 @@
     .scholar-link a { color: #800000; text-decoration: none; font-weight: 600; }
     .scholar-link a:hover { text-decoration: underline; }
     .quote-box { font-size: 0.85rem; font-style: italic; color: #555; border-left: 2px solid #800000; padding-left: 12px; margin-top: 30px; line-height: 1.4; }
+    .project-img { width: 150px; max-height: 200px; object-fit: contain; background-color: #ffffff; }
     
     .main-content { flex-grow: 1; max-width: 720px; }
     .section-title { font-size: 1.5rem; color: #800000; margin-bottom: 20px; font-weight: 700; }
@@ -35,37 +36,60 @@
 </head>
 <body>
   <div class="container">
+    <!-- BARRA LATERAL IZQUIERDA -->
     <aside class="sidebar">
+      <!-- Foto de perfil -->
       <img src="foto.jpg" alt="Foto de Perfil" class="profile-img">
-      <h1 class="author-name">Tu Nombre</h1>
-      <p class="author-title">Investigador / Académico</p>
+      
+      <!-- Nombre y Título -->
+      <h1 class="author-name">Bryan Emmanuel Alvarez Serna</h1>
+      <p class="author-title">Ph.D. in Electrical Engineering <br> Full-Time Visiting Professor</p>
+      
+      <!-- Links de CV -->
       <div class="cv-links">
-        <a href="cv-es.pdf" target="_blank">CV (Español)</a>
-        <a href="cv-en.pdf" target="_blank">CV (English)</a>
+        <a href="cv-es.pdf" target="_blank">CV (ES)</a>
+        <a href="cv-en.pdf" target="_blank">CV (ENG)</a>
       </div>
+      
       <hr class="divider">
+      
+      <!-- Menú de Navegación -->
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
       </ul>
-      <hr class="divider">
-      <div class="scholar-link"><a href="https://scholar.google.com" target="_blank">Google Scholar</a></div>
-      <div class="quote-box">"La ciencia no es solo una disciplina de la razón, sino también de romance y pasión."</div>
-    </aside>
-
-    <main class="main-content">
-      <h2 class="section-title">Projects</h2>
       
+      <hr class="divider">
+      
+      <!-- Link a Google Scholar -->
+      <div class="scholar-link">
+        <a href="https://scholar.google.com/citations?user=cvbIr90AAAAJ&hl=es" target="_blank">Google Scholar</a>
+      </div>
+      
+      <!-- Frase Motivacional -->
+      <div class="quote-box">
+        "Sometimes science is more art than science..."
+      </div>
+    </aside>
+    <main class="main-content">
+      <h2 class="section-title">Projects</h2> 
+      <p>Here, I showcase some of my projects, including a few that are not part of academic research. For research projects, please visit <a href="publications.html" class="inline-link">Publications</a>.</p>
       <div class="project-item">
-        <h3>Proyecto 1: Nombre del Proyecto</h3>
-        <p>Descripción detallada del proyecto de investigación o desarrollo actual, sus objetivos y fuentes de financiamiento.</p>
+        <h3>BioDAQ: Development of an Embedded Platform for Biosignal Acquisition</h3>
+        <p>BioDAQ is intended to be a platform for acquiring and processing biosignals using PSoC technology and digital signal-processing algorithms. The goal is to develop accessible, reliable, and portable devices for biomedical applications.
+        <br>
+          <strong>Progress:</strong> <br>
+          A related work has been presented at the <a href="https://mecsap.org/" target="_blank">Mexican Conference on Signal Analysis and Processing 2026<\a>.
+        </p>
+            <img src="psoc.png" alt="Captura o diagrama del Proyecto 1" class="project-img">
       </div>
 
       <div class="project-item">
-        <h3>Proyecto 2: Nombre del Proyecto</h3>
-        <p>Descripción del segundo proyecto, estado actual y colaboradores principales.</p>
+        <h3>Mixed-Signal ASIC Devices</h3>
+        <p>This project focuses on the design of mixed-signal devices using open-source tools, with the goal of developing ASICs for use as sensors, analog signal-conditioning circuits, and custom integrated chips for a wide range of applications.</p>
+      <img src="analog.jpg" alt="Captura o diagrama del Proyecto 1" class="project-img">
       </div>
     </main>
   </div>
