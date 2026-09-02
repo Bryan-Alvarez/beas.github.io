@@ -27,6 +27,8 @@
     
     .main-content { flex-grow: 1; max-width: 720px; }
     .section-title { font-size: 1.5rem; color: #800000; margin-bottom: 20px; font-weight: 700; }
+    .section-title a { color: #800000; font-weight: 600; text-decoration: none; }
+    .section-title a:hover { text-decoration: underline; }
     .pub-list { list-style: none; }
     .pub-list li { margin-bottom: 20px; font-size: 0.95rem; color: #333; line-height: 1.5; }
     .pub-list a { color: #800000; font-weight: 600; text-decoration: none; }
@@ -35,27 +37,45 @@
   </style>
 </head>
 <body>
+  <body>
   <div class="container">
+    <!-- BARRA LATERAL IZQUIERDA -->
     <aside class="sidebar">
+      <!-- Foto de perfil -->
       <img src="foto.jpg" alt="Foto de Perfil" class="profile-img">
-      <h1 class="author-name">Tu Nombre</h1>
-      <p class="author-title">Investigador / Académico</p>
+      
+      <!-- Nombre y Título -->
+      <h1 class="author-name">Bryan Emmanuel Alvarez Serna</h1>
+      <p class="author-title">Ph.D. in Electrical Engineering <br> Full-Time Visiting Professor</p>
+      
+      <!-- Links de CV -->
       <div class="cv-links">
-        <a href="cv-es.pdf" target="_blank">CV (Español)</a>
-        <a href="cv-en.pdf" target="_blank">CV (English)</a>
+        <a href="cv-es.pdf" target="_blank">CV (ES)</a>
+        <a href="cv-en.pdf" target="_blank">CV (ENG)</a>
       </div>
+      
       <hr class="divider">
+      
+      <!-- Menú de Navegación -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="publications.html" class="active">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
       </ul>
+      
       <hr class="divider">
-      <div class="scholar-link"><a href="https://scholar.google.com" target="_blank">Google Scholar</a></div>
-      <div class="quote-box">"La ciencia no es solo una disciplina de la razón, sino también de romance y pasión."</div>
+      
+      <!-- Link a Google Scholar -->
+      <div class="scholar-link">
+        <a href="https://scholar.google.com/citations?user=cvbIr90AAAAJ&hl=es" target="_blank">Google Scholar</a>
+      </div>
+      
+      <!-- Frase Motivacional -->
+      <div class="quote-box">
+        "Sometimes science is more art than science..."
+      </div>
     </aside>
-
     <main class="main-content">
       <h2 class="section-title">Publications</h2>
       <ul class="pub-list">
