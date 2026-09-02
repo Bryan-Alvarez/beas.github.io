@@ -24,6 +24,17 @@
     .scholar-link a { color: #800000; text-decoration: none; font-weight: 600; }
     .scholar-link a:hover { text-decoration: underline; }
     .quote-box { font-size: 0.85rem; font-style: italic; color: #555; border-left: 2px solid #800000; padding-left: 12px; margin-top: 30px; line-height: 1.4; }
+    a.inline-link,
+    a.inline-link:visited {
+      color: #800000;         /* Rojo oscuro permanente */
+      font-weight: 600;       /* Texto en seminegrita */
+      text-decoration: none;  /* Sin subrayado */
+    }
+    
+    a.inline-link:hover {
+      color: #a00000;             /* Rojo un poco más claro al pasar el cursor */
+      text-decoration: underline; /* Muestra el subrayado solo al pasar el cursor */
+    }
     
     .main-content { flex-grow: 1; max-width: 720px; }
     .section-title { font-size: 1.5rem; color: #800000; margin-bottom: 20px; font-weight: 700; }
@@ -38,7 +49,7 @@
     <!-- BARRA LATERAL IZQUIERDA -->
     <aside class="sidebar">
       <!-- Foto de perfil -->
-      <img src="vhdl.jpg" alt="Foto de Perfil" class="profile-img">
+      <img src="logo.png" alt="Foto de Perfil" class="profile-img">
       
       <!-- Nombre y Título -->
       <h1 class="author-name">Bryan Emmanuel Alvarez Serna</h1>
@@ -51,16 +62,16 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html" class="active">Publications</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html" class="active">Teaching</a></li>
       </ul>
       
       <hr class="divider">
       
       <!-- Link a Google Scholar -->
       <div class="scholar-link">
-        <a href="https://gitlab.com/bemmanuel.alvarez/diseno-digital-vlsi/-/tree/main/C%C3%B3digo%20VHDL" target="_blank">GitLab</a> <br>
-        <a href="https://scholar.google.com/citations?user=cvbIr90AAAAJ&hl=es" target="_blank">Youtube</a> <br>
+        <a href="https://github.com/Bryan-Alvarez/VHDL-BEAS" target="_blank">Github</a> <br>
+        <a href="https://www.youtube.com/channel/UCvoo2a0FQ7zo-Lj2rTF1mrA" target="_blank">Youtube</a> <br>
       </div>
       
       <!-- Frase Motivacional -->
@@ -75,6 +86,17 @@
       <div class="course-item">
         <h3>Diseño Digital VLSI</h3>
         <p>Hola</p>
+        <ul class="file-list">
+        <li>
+          <a href="manual.pdf" class="inline-link" target="_blank" rel="noopener noreferrer">DE-10 Lite</a> — Manual de usuario.
+        </li>
+        <li>
+          <a href="clase1.pdf" class="inline-link" target="_blank" rel="noopener noreferrer">Notes01</a> — Introducciòn a los PLD y al HDL.   
+        </li>
+        <li>
+          <a href="bloques.pdf" class="inline-link" target="_blank" rel="noopener noreferrer">Tutorial01</a> — Instrucciones para crear bloques en Quartus. 
+        </li>
+      </ul>
       </div>
 
 
