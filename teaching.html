@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching - Sitio Personal</title>
+  <title>Teaching - BEAS</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1a1a1a; background-color: #ffffff; line-height: 1.6; }
     .container { display: flex; max-width: 1050px; margin: 0 auto; padding: 50px 20px; gap: 60px; }
     .sidebar { width: 230px; flex-shrink: 0; }
-    .profile-img { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; border: 1px solid #e0e0e0; }
+    .profile-img { width: 85px; height: 110px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; border: 1px solid #e0e0e0; }
     .author-name { font-size: 1.4rem; font-weight: 700; color: #1a1a1a; line-height: 1.2; margin-bottom: 4px; }
     .author-title { font-size: 0.9rem; color: #666; margin-bottom: 12px; }
     .cv-links { font-size: 0.88rem; margin-bottom: 20px; }
@@ -35,38 +35,49 @@
 </head>
 <body>
   <div class="container">
+    <!-- BARRA LATERAL IZQUIERDA -->
     <aside class="sidebar">
-      <img src="foto.jpg" alt="Foto de Perfil" class="profile-img">
-      <h1 class="author-name">Tu Nombre</h1>
-      <p class="author-title">Investigador / Académico</p>
-      <div class="cv-links">
-        <a href="cv-es.pdf" target="_blank">CV (Español)</a>
-        <a href="cv-en.pdf" target="_blank">CV (English)</a>
-      </div>
+      <!-- Foto de perfil -->
+      <img src="vhdl.jpg" alt="Foto de Perfil" class="profile-img">
+      
+      <!-- Nombre y Título -->
+      <h1 class="author-name">Bryan Emmanuel Alvarez Serna</h1>
+      <p class="author-title">Ph.D. in Electrical Engineering <br> Full-Time Visiting Professor</p>
+      
+      
       <hr class="divider">
+      
+      <!-- Menú de Navegación -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="teaching.html" class="active">Teaching</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
       </ul>
+      
       <hr class="divider">
-      <div class="scholar-link"><a href="https://scholar.google.com" target="_blank">Google Scholar</a></div>
-      <div class="quote-box">"La ciencia no es solo una disciplina de la razón, sino también de romance y pasión."</div>
+      
+      <!-- Link a Google Scholar -->
+      <div class="scholar-link">
+        <a href="https://gitlab.com/bemmanuel.alvarez/diseno-digital-vlsi/-/tree/main/C%C3%B3digo%20VHDL" target="_blank">GitLab</a> <br>
+        <a href="https://scholar.google.com/citations?user=cvbIr90AAAAJ&hl=es" target="_blank">Youtube</a> <br>
+      </div>
+      
+      <!-- Frase Motivacional -->
+      <div class="quote-box">
+        "Sometimes science is more art than science..."
+      </div>
     </aside>
 
     <main class="main-content">
       <h2 class="section-title">Teaching</h2>
       
       <div class="course-item">
-        <h3>Nombre del Curso 1</h3>
-        <p>Semestre Primaveral / Licenciatura o Posgrado. Descripción breve de la materia impartida.</p>
+        <h3>Diseño Digital VLSI</h3>
+        <p>Hola</p>
       </div>
 
-      <div class="course-item">
-        <h3>Nombre del Curso 2</h3>
-        <p>Semestre Otoñal / Licenciatura o Posgrado. Descripción breve de la materia impartida.</p>
-      </div>
+
     </main>
   </div>
 </body>
