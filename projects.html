@@ -35,6 +35,18 @@
     .project-item p { color: #444; font-size: 0.95rem; }
     .project-item a { color: #800000; text-decoration: none; font-weight: 600; }
     .project-item a:hover { text-decoration: underline; }
+    a.inline-link,
+a.inline-link:visited {
+  color: #800000;
+  font-weight: 600;
+  text-decoration: none;
+}
+    .inline-link,
+.inline-link:visited {
+  color: #800000;
+  font-weight: 600;
+  text-decoration: none;
+}
     @media (max-width: 768px) { .container { flex-direction: column; gap: 30px; padding: 30px 15px; } .sidebar { width: 100%; } }
   </style>
 </head>
@@ -79,7 +91,7 @@
     </aside>
     <main class="main-content">
       <h2 class="section-title">Projects</h2> 
-      <p>Here, I showcase some of my projects, including a few that are not part of academic research. For research projects, please visit <a href="publications.html" target="_blank">Publications</a>.</p> <br> <br>
+      <p>Here, I showcase some of my projects, including a few that are not part of academic research. For research projects, please visit <a href="publications.html" class="inline-link">Publications</a>.</p> <br> <br>
       <div class="project-item">
         <h3>BioDAQ: Development of an Embedded Platform for Biosignal Acquisition</h3>
         <p>BioDAQ is intended to be a platform for acquiring and processing biosignals using PSoC technology and digital signal-processing algorithms. The goal is to develop accessible, reliable, and portable devices for biomedical applications.
